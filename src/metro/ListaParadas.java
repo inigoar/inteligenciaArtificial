@@ -52,22 +52,22 @@ public class ListaParadas {
 
         /*Linea Chuo*/
 
-        LChuo.put("Shinjuku", new Estacion(2,"Shinjuku","Suidobashi/Ochanomizu",1,null,0,1,"35 41 25.0 N","139 42 02.0 E"));
-        LChuo.put("Suidobashi/Ochanomizu",new Estacion(2,"Suidobashi/Ochanomizu","Shinjuku",1,"Tokyo",1,3,"35 42 12.0 N","139 45 18.0 E"));
-        LChuo.put("Tokyo",new Estacion(2,"Tokyo","Suidobashi/Ochanomizu",1,null,1,1,"35 41 22.0 N","139 41 31.0 E"));
+        LChuo.put("Shinjuku", new Estacion(2,"Shinjuku","Suidobashi/Ochanomizu",12,null,0,1,"35 41 25.0 N","139 42 02.0 E"));
+        LChuo.put("Suidobashi/Ochanomizu",new Estacion(2,"Suidobashi/Ochanomizu","Shinjuku",12,"Tokyo",10,3,"35 42 12.0 N","139 45 18.0 E"));
+        LChuo.put("Tokyo",new Estacion(2,"Tokyo","Suidobashi/Ochanomizu",10,null,1,1,"35 41 22.0 N","139 41 31.0 E"));
 
 
         /*Linea Subo*/
 
-        LSobu.put("Shinjuku", new Estacion(3,"Shinjuku","Yoyogi",1,null,0,2,"35 41 25.0 N","139 42 02.0 E"));
-        LSobu.put("Yoyogi",new Estacion(3,"Yoyogi","Shinjuku",1,"Sendagaya",1,1,"35 40 19.0 N","139 41 52 E"));
-        LSobu.put("Sendagaya",new Estacion(3,"Sendagaya","Yoyogi",1,"Shinanomachi",1,0,"35 40 52.0 N","139 42 40.0 E"));
-        LSobu.put("Shinanomachi",new Estacion(3,"Shinanomachi","Sendagaya",1,"Yotsuya",1,0,"35 40 48.0 N","139 43 11.0 E"));
+        LSobu.put("Shinjuku", new Estacion(3,"Shinjuku","Yoyogi",3,null,0,2,"35 41 25.0 N","139 42 02.0 E"));
+        LSobu.put("Yoyogi",new Estacion(3,"Yoyogi","Shinjuku",3,"Sendagaya",1,1,"35 40 19.0 N","139 41 52 E"));
+        LSobu.put("Sendagaya",new Estacion(3,"Sendagaya","Yoyogi",1,"Shinanomachi",3,0,"35 40 52.0 N","139 42 40.0 E"));
+        LSobu.put("Shinanomachi",new Estacion(3,"Shinanomachi","Sendagaya",3,"Yotsuya",1,0,"35 40 48.0 N","139 43 11.0 E"));
         LSobu.put("Yotsuya",new Estacion(3,"Yotsuya","Shinanomachi",1,"Lichigaya",1,0,"35 41 09.0 N","139 43 50.0 E"));
-        LSobu.put("Lichigaya",new Estacion(3,"Lichigaya","Yotsuya",1,"Lidabashi",1,0,"35 41 28.0 N","139 44 07.0 E"));
-        LSobu.put("Lidabashi",new Estacion(3,"Lidabashi","Lichigaya",1,"Suidobashi/Ochanomizu",1,0,"35 42 07.0 N","139 44 42.0 E"));
-        LSobu.put("Suidobashi/Ochanomizu",new Estacion(3,"Suidobashi/Ochanomizu","Lidabashi",1,"Akihabara",1,2,"35 42 12.0 N","139 45 18.0 E"));
-        LSobu.put("Akihabara",new Estacion(3,"Akihabara","Suidobashi/Ochanomizu",1,null,1,1,"35 41 55.0 N","139 46 27.0 E"));
+        LSobu.put("Lichigaya",new Estacion(3,"Lichigaya","Yotsuya",1,"Lidabashi",2,0,"35 41 28.0 N","139 44 07.0 E"));
+        LSobu.put("Lidabashi",new Estacion(3,"Lidabashi","Lichigaya",2,"Suidobashi/Ochanomizu",1,0,"35 42 07.0 N","139 44 42.0 E"));
+        LSobu.put("Suidobashi/Ochanomizu",new Estacion(3,"Suidobashi/Ochanomizu","Lidabashi",1,"Akihabara",2,2,"35 42 12.0 N","139 45 18.0 E"));
+        LSobu.put("Akihabara",new Estacion(3,"Akihabara","Suidobashi/Ochanomizu",2,null,1,1,"35 41 55.0 N","139 46 27.0 E"));
 
 
 
