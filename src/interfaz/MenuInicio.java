@@ -53,7 +53,7 @@ public class MenuInicio {
         frameSeleccion.setLocationRelativeTo(null);// Centrar en pantalla
         frameSeleccion.setResizable(false);//Para no poder cambiar tamano ventana
         frameSeleccion.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);// Para cerrar correctamente
-        frameSeleccion.setTitle("Japan Railway");//Titulo Ventana
+        frameSeleccion.setTitle("         Japan Railway");//Titulo Ventana
         frameSeleccion.setIconImage(new ImageIcon(getClass().getResource("/images/logo.png")).getImage());//Icono app
 
         // boton ver mapa
@@ -99,7 +99,7 @@ public class MenuInicio {
         // Imagen de Fondo
         JLabel ImagenFondo = new JLabel("");
         ImagenFondo.setIcon(new ImageIcon(MenuInicio.class.getResource("/images/metro.jpg")));
-        ImagenFondo.setBounds(0, 0, 45, 30);
+        ImagenFondo.setBounds(0, 0, 50, 30);
         frameSeleccion.getContentPane().add(ImagenFondo);
     }
 }
