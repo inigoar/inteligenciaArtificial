@@ -118,17 +118,17 @@ public class Viaje{
                 if(linea==1) {
                     ruta = ruta + "Se encuentra en ";
                     ruta = ruta + nombre + "\n";
-                    ruta = ruta + "Debe tomar la linea Uzbekistan" + "\n hasta la estacion ";
+                    ruta = ruta + "Debe tomar la linea Yamanote" + "\nhasta la estacion ";
                 }
                 if(linea==2) {
                     ruta = ruta + "Se encuentra en ";
                     ruta = ruta + nombre + "\n";
-                    ruta = ruta + "Debe tomar la linea Chilonzor" + "\n hasta la estacion ";
+                    ruta = ruta + "Debe tomar la linea Chuo" + "\nhasta la estacion ";
                 }
                 if(linea==3) {
                     ruta = ruta + "Se encuentra en ";
                     ruta = ruta + nombre + "\n";
-                    ruta = ruta + "Debe tomar la linea Yunusabad" + "\n hasta la estacion ";
+                    ruta = ruta + "Debe tomar la linea Sobu" + "\nhasta la estacion ";
                 }
 
             }
@@ -139,26 +139,26 @@ public class Viaje{
                 ruta = ruta + nombre + "\nHaga transbordo \n";
                 linea = recorrido.get(i).getLinea();
                 if(linea==1) {
-                    ruta = ruta + "Debe tomar la linea Uzbekistan" + " hasta la estacion ";
+                    ruta = ruta + "Debe tomar la linea Yamanote" + " hasta la estacion ";
                 }
                 if(linea==2) {
-                    ruta = ruta + "Debe tomar la linea Chilonzor" + " hasta la estacion ";
+                    ruta = ruta + "Debe tomar la linea Chuo" + " hasta la estacion ";
                 }
                 if(linea==3) {
-                    ruta = ruta + "Debe tomar la linea Yunusabad" + " hasta la estacion ";
+                    ruta = ruta + "Debe tomar la linea Sobu" + " hasta la estacion ";
                 }
             }
             else
                 nombre = recorrido.get(i).getNombre();
             linea = recorrido.get(i).getLinea();
             if(linea==1) {
-                nodo =nodo + recorrido.get(i).getNombre() +" (linea Uzbekistan)\n";
+                nodo =nodo + recorrido.get(i).getNombre() +" (linea Yamanote)\n";
             }
             if(linea==2) {
-                nodo =nodo + recorrido.get(i).getNombre() +" (linea Chilonzor)\n";
+                nodo =nodo + recorrido.get(i).getNombre() +" (linea Chuo)\n";
             }
             if(linea==3) {
-                nodo =nodo + recorrido.get(i).getNombre() +" (llinea Yunusabad)\n";
+                nodo =nodo + recorrido.get(i).getNombre() +" (llinea Sobu)\n";
             }
 
         }
@@ -176,7 +176,7 @@ public class Viaje{
         frameTrayecto.setLocationRelativeTo(null);// Centrar en pantalla
         frameTrayecto.setResizable(false);//Para no poder cambiar tamano ventana
         frameTrayecto.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);// Para cerrar correctamente
-        frameTrayecto.setTitle("Metro Tashkent");//Titulo Ventana
+        frameTrayecto.setTitle("Metro Japon");//Titulo Ventana
         frameTrayecto.setIconImage(new ImageIcon(getClass().getResource("/images/Logo.png")).getImage());//Icono app
 
         frameTrayecto.addWindowListener(new WindowAdapter() {

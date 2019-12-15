@@ -53,11 +53,11 @@ public class MenuInicio {
         frameSeleccion.setLocationRelativeTo(null);// Centrar en pantalla
         frameSeleccion.setResizable(false);//Para no poder cambiar tamano ventana
         frameSeleccion.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);// Para cerrar correctamente
-        frameSeleccion.setTitle("Metro Tashkent");//Titulo Ventana
+        frameSeleccion.setTitle("Japan Railway");//Titulo Ventana
         frameSeleccion.setIconImage(new ImageIcon(getClass().getResource("/images/Logo.png")).getImage());//Icono app
 
         // boton ver mapa
-        JButton buttonMapa = new JButton("PLANO DE \nMETRO");
+        JButton buttonMapa = new JButton("PLANO DEL \nMETRO");
         buttonMapa.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent arg0) {
@@ -87,7 +87,7 @@ public class MenuInicio {
         JPanel panelFondoBlanco = new JPanel();
         frameSeleccion.getContentPane().add(panelFondoBlanco);
 
-        JLabel logo = new JLabel("TOSHKENT METRO");
+        JLabel logo = new JLabel("JAPAN RAILWAY");
         logo.setForeground(Color.WHITE);
         logo.setFont(new Font("Arial", Font.BOLD,40));
         logo.setBounds(50,-200,900,700);
@@ -99,7 +99,7 @@ public class MenuInicio {
         // Imagen de Fondo
         JLabel ImagenFondo = new JLabel("");
         ImagenFondo.setIcon(new ImageIcon(MenuInicio.class.getResource("/images/metro.jpg")));
-        ImagenFondo.setBounds(0, 0, 900, 600);
+        ImagenFondo.setBounds(0, 0, 45, 30);
         frameSeleccion.getContentPane().add(ImagenFondo);
     }
 }

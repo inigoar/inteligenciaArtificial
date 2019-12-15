@@ -35,7 +35,7 @@ public class Mapa {
         framePlano.setLocationRelativeTo(null);// Centrar en pantalla
         framePlano.setResizable(false);//Para no poder cambiar tamano ventana
         framePlano.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);// Para cerrar correctamente
-        framePlano.setTitle("Metro Taskent");//Titulo Ventana
+        framePlano.setTitle("Metro Japon");//Titulo Ventana
         framePlano.setIconImage(new ImageIcon(getClass().getResource("/images/Logo.png")).getImage());//Icono app
 
         contentPaneMapa = new JPanel();
@@ -52,7 +52,7 @@ public class Mapa {
             }
         });
 
-        btnAtrasMapa = new JButton("Atr�s");
+        btnAtrasMapa = new JButton("Atras");
         btnAtrasMapa.setBounds(598, 35, 100, 39);
         contentPaneMapa.add(btnAtrasMapa);
         btnAtrasMapa.addMouseListener(new MouseAdapter() {
@@ -66,8 +66,8 @@ public class Mapa {
         });
 
         JLabel ImagenMapa = new JLabel("");
-        ImagenMapa.setIcon(new ImageIcon(Mapa.class.getResource("/images/MapaMetro.png")));
-        ImagenMapa.setBounds(0, -50, 883, 700);
+        ImagenMapa.setIcon(new ImageIcon(Mapa.class.getResource("/images/metroJapon1.png")));
+        ImagenMapa.setBounds(0, -50, 500, 800);
         contentPaneMapa.add(ImagenMapa);
     }
 

@@ -8,53 +8,66 @@ import java.util.Map;
 
 public class ListaParadas {
 
-    private HashMap<String,Estacion> LUzbekistan, LChilonzor, LYunusabad;
+    private HashMap<String,Estacion> LYamanote, LChuo, LSobu;
 
     public ListaParadas() {
 
-        LUzbekistan = new HashMap<String, Estacion>();
-        LChilonzor = new HashMap<String,Estacion>();
-        LYunusabad = new HashMap<String,Estacion>();
+        LYamanote = new HashMap<String, Estacion>();
+        LChuo = new HashMap<String,Estacion>();
+        LSobu = new HashMap<String,Estacion>();
 
 
-        /*LIENA UZBEKISTAN*/
-        LUzbekistan.put("Beruni",new Estacion(1,"Beruni","Tinchlik",1,null,0,0,"41 20 45.8 N","69 12 23.6 E"));
-        LUzbekistan.put("Tinchlik", new Estacion(1,"Tinchlik","Beruni",1,"Chorsu",1,0,"41 19 56.9 N","69 13 08.7 E"));
-        LUzbekistan.put("Chorsu",new Estacion(1,"Chorsu","Tinchlik",1,"Gafur Gulom",1,0,"41 19 31.8 N","69 14 09.0 E"));
-        LUzbekistan.put("Gafur Gulom",new Estacion(1,"Gafur Gulom","Chorsu",1,"Aliser Navoi/Pakhtakor",1,0,"41 19 40.0 N","69 14 51.1 E"));
-        LUzbekistan.put("Aliser Navoi/Pakhtakor", new Estacion(1,"Aliser Navoi/Pakhtakor","Gafur Gulom",1,"Uzbekistan",2,2,"41 19 12.7 N","69 15 14.5 E"));
-        LUzbekistan.put("Uzbekistan",new Estacion(1,"Uzbekistan","Aliser Navoi/Pakhtakor",1,"Kosmonavtlar",1,0,"41 18 41.0 N","69 15 11.0 E"));
-        LUzbekistan.put("Kosmonavtlar",new Estacion(1,"Kosmonavtlar","Uzbekistan",1,"Oybek/Ming Urik",1,0,"41 18 19.6 N","69 15 49.9 E"));
-        LUzbekistan.put("Oybek/Ming Urik",new Estacion(1,"Oybek/Ming Urik","Kosmonavtlar",1,"Toshkent",1,3,"41 17 55.3 N","69 16 22.9 E"));
-        LUzbekistan.put("Toshkent",new Estacion(1,"Toshkent","Oybek/Ming Urik",1,"Mashinasozlar",1,0,"41 17 29.8 N","69 17 13.0 E"));
-        LUzbekistan.put("Mashinasozlar",new Estacion(1,"Mashinasozlar","Toshkent",1,"Dostlik",1,0,"41 17 58.9 N","69 18 15.8 E"));
-        LUzbekistan.put("Dostlik",new Estacion(1,"Dostlik","Mashinasozlar",1,null,1,0,"41 17 40.0 N","69 19 17.5 E"));
+        /*Linea Yamanote*/
 
-        /*LINEA CHILONZOR*/
-
-        LChilonzor.put("Olmazor", new Estacion(2,"Olmazor","Chilonzor",1,null,0,0,"41 15 27.3 N","69 11 45.3 E"));
-        LChilonzor.put("Chilonzor",new Estacion(2,"Chilonzor","Olmazor",1,"Mirzo Ulugbek",1,0,"41 16 26.9 N","69 12 13.7 E"));
-        LChilonzor.put("Mirzo Ulugbek",new Estacion(2,"Mirzo Ulugbek","Chilonzor",1,"Novza",1,0,"41 16 54.0 N","69 12 47.0 E"));
-        LChilonzor.put("Novza",new Estacion(2,"Novza","Mirzo Ulugbek",1,"Milliy Bog",1,0,"41 17 29.4 N","69 13 23.5 E"));
-        LChilonzor.put("Milliy Bog",new Estacion(2,"Milliy Bog","Novza",1,"Bunyodkor",1,0,"41 18 16.5 N","69 14 05.9 E"));
-        LChilonzor.put("Bunyodkor",new Estacion(2,"Bunyodkor","Milliy Bog",1,"Aliser Navoi/Pakhtakor",1,0,"41 18 41.1 N","69 14 31.0 E"));
-        LChilonzor.put("Aliser Navoi/Pakhtakor", new Estacion(2,"Aliser Navoi/Pakhtakor","Bunyodkor",1,"Mustakillik Maydoni",1,1,"41 19 12.7 N","69 15 14.5 E"));
-        LChilonzor.put("Mustakillik Maydoni", new Estacion(2,"Mustakillik Maydoni","Aliser Navoi/Pakhtakor",1,"Amir Temur Hiyoboni/Yunus Rajabiy",1,0,"41 18 43.1 N","69 14 32.5 E"));
-        LChilonzor.put("Amir Temur Hiyoboni/Yunus Rajabiy", new Estacion(2,"Amir Temur Hiyoboni/Yunus Rajabiy","Mustakillik Maydoni",1,"Khamid Alimjan",1,3,"41 18 48.4 N","69 17 5.5 E"));
-        LChilonzor.put("Khamid Alimjan",new Estacion(2,"Khamid Alimjan","Amir Temur Hiyoboni/Yunus Rajabiy",1,"Pushkin",1,0,"41 19 3.1 N","69 17 42.9 E"));
-        LChilonzor.put("Pushkin",new Estacion(2,"Pushkin","Khamid Alimjan",1,"Buyuk Ipak Yuli",1,0,"41 19 26.6 N","69 18 45.7 E"));
-        LChilonzor.put("Buyuk Ipak Yuli",new Estacion(2,"Buyuk Ipak Yuli","Pushkin",1,null,1,0,"41 19 35 N","69 19 40.8 E"));
-
-        /*LINEA YUNUSABAD*/
-
-        LYunusabad.put("Shakriston", new Estacion(3,"Shakriston","Bodonzor",1,null,0,0,"41 21 11 N","69 17 17.4 E"));
-        LYunusabad.put("Bodonzor",new Estacion(3,"Bodonzor","Shakriston",1,"Minor",1,0,"41 20 16.3 N","69 17 7 E"));
-        LYunusabad.put("Minor",new Estacion(3,"Minor","Bodonzor",1,"Abdulla Kodiriy",1,0,"41 19 39.2 N","69 17 01.6 E"));
-        LYunusabad.put("Abdulla Kodiriy",new Estacion(3,"Abdulla Kodiriy","Minor",1,"Amir Temur Hiyoboni/Yunus Rajabiy",1,0,"41 19 09.8 N","69 16 56.9 E"));
-        LYunusabad.put("Amir Temur Hiyoboni/Yunus Rajabiy",new Estacion(3,"Amir Temur Hiyoboni/Yunus Rajabiy","Abdulla Kodiriy",1,"Oybek/Ming Urik",1,2,"41 18 48.4 N","69 17 5.5 E"));
-        LYunusabad.put("Oybek/Ming Urik",new Estacion(3,"Oybek/Ming Urik","Amir Temur Hiyoboni/Yunus Rajabiy",1,null,1,1,"41 17 55.3 N","69 16 22.9 E"));
+        LYamanote.put("Shinjuku",new Estacion(1,"Shinjuku","Shin - Okubo",1,"Yoyogi",1,0,"35 41 25.0 N","139 42 02.0 E"));
+        LYamanote.put("Yoyogi", new Estacion(1,"Yoyogi","Shinjuku",1,"Harajuku",1,0,"35 40 19.0 N","139 41 52.0 E"));
+        LYamanote.put("Harajuku",new Estacion(1,"Harajuku","Yoyogi",1,"Shibuya",1,0,"35 40 06.0 N","139 42 19.0 E"));
+        LYamanote.put("Shibuya",new Estacion(1,"Shibuya","Harajuku",1,"Ebisu",1,0,"35 39 31.0 N","139 42 05.0 E"));
+        LYamanote.put("Ebisu", new Estacion(1,"Ebisu","Shibuya",1,"Meguro",2,0,"35 38 47.0 N","139 42 36.0 E"));
+        LYamanote.put("Meguro",new Estacion(1,"Meguro","Ebisu",1,"Gotanda",1,0,"35 37 16.0 N","139 41 16.0 E"));
+        LYamanote.put("Gotanda",new Estacion(1,"Gotanda","Meguro",1,"Osaki",1,0,"35 37 33.0 N","139 43 25.0 E"));
+        LYamanote.put("Osaki",new Estacion(1,"Osaki","Gotanda",1,"Shinagawa",1,0,"35 25 60.0 N","139 37 59.0 E"));
+        LYamanote.put("Shinagawa",new Estacion(1,"Shinagawa","Osaki",1,"Tamachi",1,0,"35 37 41.0 N","139 44 20.0 E"));
+        LYamanote.put("Tamachi",new Estacion(1,"Tamachi","Shinagawa",1,"Hamamatsucho",1,0,"35 38 44.0 N","139 44 51.0 E"));
+        LYamanote.put("Hamamatsucho",new Estacion(1,"Hamamatsucho","Tamachi",1,"Shimbasi",1,0,"35 39 18.0 N","139 45 25.0 E"));
+        LYamanote.put("Shimbashi",new Estacion(1,"Shimbashi","Hamamatsucho",1,"Yurakucho",1,0,"35 39 55.0 N","139 45 35.0 E"));
+        LYamanote.put("Yurakucho",new Estacion(1,"Yurakucho","Shimbashi",1,"Tokyo",1,0,"35 40 30.0 N","139 45 44.0 E"));
+        LYamanote.put("Tokyo",new Estacion(1,"Tokyo","Yurakucho",1,"Kanda",1,0,"35 41 22.0 N","139 41 31.0 E"));
+        LYamanote.put("Kanda",new Estacion(1,"Kanda","Tokyo",1,"Akihabara",1,0,"35 41 42.0 N","139 47 17.0 E"));
+        LYamanote.put("Akihabara",new Estacion(1,"Akihabara","Kanda",1,"Okachimachi",1,0,"35 41 55.0 N","139 46 27.0 E"));
+        LYamanote.put("Okachimachi",new Estacion(1,"Okachimachi","Akihabara",1,"Ueno",1,0,"35 42 25.0 N","139 46 28.0 E"));
+        LYamanote.put("Ueno",new Estacion(1,"Ueno","Okachimachi",1,"Uguisudani",1,0,"35 42 42.0 N","139 46 39.0 E"));
+        LYamanote.put("Uguisudani",new Estacion(1,"Uguisudani","Ueno",1,"Nippori",1,0,"35 43 42.0 N","139 46 44.0 E"));
+        LYamanote.put("Nippori",new Estacion(1,"Nippori","Uguisudani",1,"Nishi-Nippori",1,0,"35 43 44.0 N","139 46 16.0 E"));
+        LYamanote.put("Nishi-Nippori",new Estacion(1,"Nishi-Nippori","Nippori",1,"Tabata",1,0,"35 44 37.0 N","139 43 44.0 E"));
+        LYamanote.put("Tabata",new Estacion(1,"Tabata","Nishi-Nippori",1,"Komagome",1,0,"35 44 14.0 N","139 45 42.0 E"));
+        LYamanote.put("Komagome",new Estacion(1,"Komagome","Tabata",1,"Sugamo",1,0,"35 44 56.0 N","139 46 11.0 E"));
+        LYamanote.put("Sugamo",new Estacion(1,"Sugamo","Komagome",1,"Otsuka",1,0,"35 44 37.0 N","139 43 44.0 E"));
+        LYamanote.put("Otsuka",new Estacion(1,"Otsuka","Sugamo",1,"Ikebukuru",1,0,"35 43 53.0 N","139 43 43.0 E"));
+        LYamanote.put("Ikebukuru",new Estacion(1,"Ikebukuru","Otsuka",1,"Mejiro",1,0,"35 43 49.0 N","139 42 41.0 E"));
+        LYamanote.put("Mejiro",new Estacion(1,"Mejiro","Ikebukuru",1,"Takadanobaba",1,0,"35 43 16.0 N","139 42 25.0 E"));
+        LYamanote.put("Takadanobaba",new Estacion(1,"Takadanobaba","Mejiro",1,"Shin - Okubo",1,0,"35 42 43.0 N","139 43 08.0 E"));
+        LYamanote.put("Shin - Okubo",new Estacion(1,"Shin - Okubo","Takadanobaba",1,"Shinjuku",1,0,"35 42 04.0 N","139 42 00.0 E"));
 
 
+        /*Linea Chuo*/
+
+        LChuo.put("Shinjuku", new Estacion(2,"Shinjuku","Suidobashi/Ochanomizu",1,null,25,0,"35 41 25.0 N","139 42 02.0 E"));
+        LChuo.put("Suidobashi/Ochanomizu",new Estacion(2,"Suidobashi/Ochanomizu","Shinjuku",1,"Tokyo",1,0,"35 42 12.0 N","139 45 18.0 E"));
+        LChuo.put("Tokyo",new Estacion(2,"Tokyo","Suidobashi/Ochanomizu",1,null,25,0,"35 41 22.0 N","139 41 31.0 E"));
+
+
+        /*Linea Subo*/
+
+        LSobu.put("Shinjuku", new Estacion(3,"Shinjuku","Yoyogi",1,null,25,0,"35 41 25.0 N","139 42 02.0 E"));
+        LSobu.put("Yoyogi",new Estacion(3,"Yoyogi","Shinjuku",1,"Sendagaya",1,0,"35 40 19.0 N","139 41 52 E"));
+        LSobu.put("Sendagaya",new Estacion(3,"Sendagaya","Yoyogi",1,"Shinanomachi",1,0,"35 40 52.0 N","139 42 40.0 E"));
+        LSobu.put("Shinanomachi",new Estacion(3,"Shinanomachi","Sendagaya",1,"Yotsuya",1,0,"35 40 48.0 N","139 43 11.0 E"));
+        LSobu.put("Yotsuya",new Estacion(3,"Yotsuya","Shinanomachi",1,"Lichigaya",1,0,"35 41 09.0 N","139 43 50.0 E"));
+        LSobu.put("Lichigaya",new Estacion(3,"Lichigaya","Yotsuya",1,"Lidabashi",1,0,"35 41 28.0 N","139 44 07.0 E"));
+        LSobu.put("Lidabashi",new Estacion(3,"Lidabashi","Lichigaya",1,"Suidobashi/Ochanomizu",1,0,"35 42 07.0 N","139 44 42.0 E"));
+        LSobu.put("Suidobashi/Ochanomizu",new Estacion(3,"Suidobashi/Ochanomizu","Lidabashi",1,"Akihabara",1,0,"35 42 12.0 N","139 45 18.0 E"));
+        LSobu.put("Akihabara",new Estacion(3,"Akihabara","Suidobashi/Ochanomizu",1,null,25,0,"35 41 55.0 N","139 46 27.0 E"));
 
 
 
@@ -91,9 +104,9 @@ public class ListaParadas {
     public HashMap<String,Estacion>[] getLineas(){
         @SuppressWarnings("unchecked")
         HashMap<String,Estacion>[] hashMap = new HashMap[3];
-        hashMap[0] = this.LUzbekistan;
-        hashMap[1] = this.LChilonzor;
-        hashMap[2] = this.LYunusabad;
+        hashMap[0] = this.LYamanote;
+        hashMap[1] = this.LChuo;
+        hashMap[2] = this.LSobu;
         //hashMap[3] = this.CambioLinea;
 
         return hashMap;

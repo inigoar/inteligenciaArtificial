@@ -54,14 +54,14 @@ public class CalcularViaje {
         frameSeleccion.setLocationRelativeTo(null);// Centrar en pantalla
         frameSeleccion.setResizable(false);//Para no poder cambiar tamano ventana
         frameSeleccion.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);// Para cerrar correctamente
-        frameSeleccion.setTitle("Metro Tashkent");//Titulo Ventana
+        frameSeleccion.setTitle("Metro Japon");//Titulo Ventana
         frameSeleccion.setIconImage(new ImageIcon(getClass().getResource("/images/Logo.png")).getImage());//Icono app
 
         contentSeleccion = new JPanel();
         contentSeleccion.setBorder(new EmptyBorder(100, 100, 980, 514));
         contentSeleccion.setLayout(null);
 
-        JButton btnAtrasMapa = new JButton("Atr�s");
+        JButton btnAtrasMapa = new JButton("Atras");
 
         btnAtrasMapa.setBounds(430, 20, 90, 30);
         contentSeleccion.add(btnAtrasMapa);
