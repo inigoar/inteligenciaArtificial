@@ -54,7 +54,7 @@ public class MenuInicio {
         frameSeleccion.setResizable(false);//Para no poder cambiar tamano ventana
         frameSeleccion.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);// Para cerrar correctamente
         frameSeleccion.setTitle("Japan Railway");//Titulo Ventana
-        frameSeleccion.setIconImage(new ImageIcon(getClass().getResource("/images/Logo.png")).getImage());//Icono app
+        frameSeleccion.setIconImage(new ImageIcon(getClass().getResource("/images/logo.png")).getImage());//Icono app
 
         // boton ver mapa
         JButton buttonMapa = new JButton("PLANO DEL \nMETRO");

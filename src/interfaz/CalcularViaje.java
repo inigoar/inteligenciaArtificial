@@ -149,7 +149,7 @@ public class CalcularViaje {
 
 
         JLabel ImagenFondo = new JLabel("");
-        ImagenFondo.setIcon(new ImageIcon(CalcularViaje.class.getResource("/images/Viaje.jpg")));
+        ImagenFondo.setIcon(new ImageIcon(CalcularViaje.class.getResource("/images/viaje.jpg")));
         ImagenFondo.setBounds(0, 0, 798, 556);
         frameSeleccion.getContentPane().add(ImagenFondo);
 

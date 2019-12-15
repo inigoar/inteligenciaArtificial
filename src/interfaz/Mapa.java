@@ -31,7 +31,7 @@ public class Mapa {
     public void inicialize(){
 
         framePlano.pack();
-        framePlano.setSize(883, 600);//Tamano de la ventana
+        framePlano.setSize(783, 500);//Tamano de la ventana
         framePlano.setLocationRelativeTo(null);// Centrar en pantalla
         framePlano.setResizable(false);//Para no poder cambiar tamano ventana
         framePlano.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);// Para cerrar correctamente
@@ -66,8 +66,8 @@ public class Mapa {
         });
 
         JLabel ImagenMapa = new JLabel("");
-        ImagenMapa.setIcon(new ImageIcon(Mapa.class.getResource("/images/metroJapon1.png")));
-        ImagenMapa.setBounds(0, -50, 500, 800);
+        ImagenMapa.setIcon(new ImageIcon(Mapa.class.getResource("/images/mapaMetro.png")));
+        ImagenMapa.setBounds(0, -100, 900, 1200);
         contentPaneMapa.add(ImagenMapa);
     }
 

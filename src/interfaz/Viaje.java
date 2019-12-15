@@ -177,7 +177,7 @@ public class Viaje{
         frameTrayecto.setResizable(false);//Para no poder cambiar tamano ventana
         frameTrayecto.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);// Para cerrar correctamente
         frameTrayecto.setTitle("Metro Japon");//Titulo Ventana
-        frameTrayecto.setIconImage(new ImageIcon(getClass().getResource("/images/Logo.png")).getImage());//Icono app
+        frameTrayecto.setIconImage(new ImageIcon(getClass().getResource("/images/logo.png")).getImage());//Icono app
 
         frameTrayecto.addWindowListener(new WindowAdapter() {
             @Override
@@ -209,7 +209,7 @@ public class Viaje{
 
 
         JLabel lblSeleccioneUnOrigen = new JLabel("Mejor Opcion");
-        lblSeleccioneUnOrigen.setForeground(Color.BLUE);
+        lblSeleccioneUnOrigen.setForeground(Color.white);
         lblSeleccioneUnOrigen.setFont(new Font("ARIAL", Font.BOLD, 25));
         lblSeleccioneUnOrigen.setHorizontalAlignment(SwingConstants.CENTER);
         lblSeleccioneUnOrigen.setBounds(10, 10, 300, 20);
